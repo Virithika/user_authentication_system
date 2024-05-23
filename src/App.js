@@ -1,25 +1,55 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate, useNavigate } from 'react-router-dom';
+import Home from './Home';
+import Register from './Register';
+import Login from './Login';
+import Mail from './Mail'; 
 import './App.css';
 
-function App() {
+const App = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (page) => {
+    switch (page) {
+      case 'home':
+        navigate('/');
+        break;
+      case 'register':
+        navigate('/register');
+        break;
+      case 'login':
+        navigate('/login');
+        break;
+      default:
+        break;
+    }
+  };
+
+  const handleRegister = () => {
+    navigate('/login');
+  };
+
+  const handleLogin = (token) => {
+    navigate(`/resetPassword/${token}`);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Home onNavigate={handleNavigate} />} />
+        <Route path="/register" element={<Register onRegister={handleRegister} />} />
+        <Route path="/login" element={<Login onLogin={handleLogin} />} />
+        <Route path="/resetPassword/:token" element={<Mail />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
     </div>
   );
-}
+};
 
-export default App;
+const AppWrapper = () => (
+  <Router>
+    <App />
+  </Router>
+);
+
+export default AppWrapper;

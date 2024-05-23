@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.home {
+  background-image: url('C:\mernprjct\error\my-react-app\pexels-photo-1229861.jpeg'); /* Replace with the actual path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 20px;
+}
+
+.home h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: violet;
+}
+
+.home p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+.home .buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.home button {
+  background-color: rgba(237, 120, 120, 0.8);
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home button:hover {
+  background-color: rgb(41, 119, 236);
+}

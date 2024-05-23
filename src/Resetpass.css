@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('C:\mernprjct\error\my-react-app\User_Authentication_Best_Practices_Image.jpg'); /* Replace with the actual path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+.reset-password-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.reset-password-form {
+  max-width: 400px;
+  width: 100%;
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,
+
+0, 0, 0.2);
+}
+
+.reset-password-form h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+button {
+  width: 100%;
+  padding: 0.75em;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.success-message {
+  color: green;
+  margin-bottom: 1em;
+  text-align: center;
+}
