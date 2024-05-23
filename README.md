@@ -1,8 +1,8 @@
 # User Authentication System
 The User Authentication System is a secure and robust solution for handling user registration, login, and authentication processes. This project aims to provide a simple and effective way to integrate user authentication into your applications.
 # Features
-    - User Registration
-    - User Login
+    1. User Registration
+    2 User Login
     3.Password Encryption
     4.JWT Token Generation
     5.Token-based Authentication
@@ -15,7 +15,18 @@ Frontend:React.js
 # Installation
 To set up the project locally, follow these steps:
 
-Clone the repository:
+1.Clone the repository:
 
 ```bash
-sdfghj
+https://github.com/Virithika/user_authentication_system.git
+
+2.Install dependencies:
+npm install
+
+3.Run your Backend:
+node server.js
+
+4.Run your Frontend:
+npm start
+
+You will see the output
