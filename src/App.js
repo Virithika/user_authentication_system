@@ -5,7 +5,7 @@ import Register from './Register';
 import Login from './Login';
 import Mail from './Mail'; 
 import './App.css';
-
+//app
 const App = () => {
   const navigate = useNavigate();
 
